@@ -1,3 +1,6 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sumonvis/repositories/Sumon-Visa-And-Consultancy
+    - export DEPLOYPATH=/home/sumonvis/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
