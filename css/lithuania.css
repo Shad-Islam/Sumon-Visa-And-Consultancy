@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image-box{
+    padding: 30px 0; 
+    text-align: center;
+}
+
+.image-box img{
+    width: 283px;
+    height: 264px;
+}
+
+
+.container{
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#header_part{
+    padding: 13px 0 17px;
+}
+
+.header_cont {
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 85px;
+
+}
+
+
+.header_head h2{
+    font-size: 36px;
+    color: #0C78E7;
+    font-weight: 700;
+    line-height: 88px;
+    padding-left: 12px;
+}
+
+/* =========================================================
+                    header part end
+==========================================================*/
+/* =========================================================
+                    Menu part start
+==========================================================*/
+.menu-bar{
+    text-align: center;
+    background-color:#3292F4;
+}
+
+.menu-bar ul{
+    color: #fff;
+    list-style: none;
+    display: inline-flex;
+}
+.menu-bar ul li{
+   /* width: 120px; 
+    margin: 15px; */
+   padding: 15px;
+   transition: all linear 0.5s;
+}
+.menu-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bar ul li:hover{
+    background-color: #0C78E7;
+
+}
+
+.sub-menu-1{
+    display: none;
+   transition: all linear 0.5s;
+
+} 
+
+.menu-bar ul li:hover .sub-menu-1{
+    z-index: 1000;
+    display: block;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: -15px;
+    background-color: #3292F4;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    margin: 10px;
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+   width: 150px;
+   padding: 10px;
+   text-align: left;
+   border-bottom: 1px dotted #fff;
+}
+
+/* =========================================================
+                    Menu part end
+==========================================================*/
+
+.gallery-title{
+    color: #0C78E7;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.facebook_post{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .serv_col {
+        flex: 0 0 100%; /* Take full width on small screens */
+    }
+
+    .menu-bar ul li{
+        padding: 8px;
+        transition: all linear 0.5s;
+     }
+
+     .facebook_post{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .serv_col {
+        flex: 0 0 48%; /* Display two columns in a row on medium screens */
+    }
+    
+}
+
+
+
