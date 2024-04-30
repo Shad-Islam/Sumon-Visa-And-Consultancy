@@ -338,10 +338,12 @@ body {
 /* Notice part end */
 
 /* Employer Section */
+
 #Employer {
   background-color: #f9f9f9;
   padding: 50px 0;
 }
+
 .Employer-container {
   width: 80%;
   margin: 0 auto;
@@ -393,6 +395,14 @@ body {
   color: #777;
   display: block;
 }
+
+/* Added enhancement for more attraction */
+.Employer-item p.job-title {
+  font-weight: bold;
+  color: #007bff; /* Blue color for job titles */
+}
+
+
 
 /* Contact Us Section */
 #contact {
