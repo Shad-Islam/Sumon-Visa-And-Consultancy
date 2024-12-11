@@ -363,7 +363,7 @@ body {
 
 .Employer-item {
   /* change the number when add employe */
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 3 - 20px);
   text-align: center;
   padding: 20px;
   background-color: #fff;
